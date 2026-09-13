@@ -1,9 +1,17 @@
 export default function WhyWeMadeItSection() {
   return (
-    <section className="brand-story section">
+    <section className="why-made section">
       <div className="container">
-        <h2>WHY WE MADE IT</h2>
-        <p>After years of testing various water bottles in our daily routines, we found that most didn't meet our needs for temperature retention and portability. LUNEVA was born from the need for a bottle that could keep drinks cold for an entire day and hot for over half a day, without compromising on style or safety. We wanted a solution that would seamlessly integrate into any lifestyle – whether it's your morning coffee commute or afternoon hike.</p>
+        <p className="eyebrow text-center">WHY WE MADE IT</p>
+        <h2 className="text-center">Made to be kept, not replaced.</h2>
+        <p className="text-center">We started LUNÉVA with a simple frustration: bottles that looked beautiful but sweated, leaked, or lost their chill by noon — and bottles that performed but looked like gym equipment. We believed you shouldn't have to choose.</p>
+        <p className="text-center">Every LUNÉVA bottle is designed to be the last one you buy for a very long time. Durable materials, a timeless silhouette, and a finish that resists scratches and fingerprints mean it ages gracefully alongside you.</p>
+        <ul className="spec-list">
+          <li>18/8 food-grade stainless steel, BPA and BPS free</li>
+          <li>Bamboo lid with a food-safe silicone seal</li>
+          <li>Powder-coated matte finish that resists scuffs</li>
+          <li>Fits standard car cup holders and bike cages</li>
+        </ul>
       </div>
     </section>
   );

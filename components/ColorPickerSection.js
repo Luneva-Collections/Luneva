@@ -1,19 +1,20 @@
 export default function ColorPickerSection() {
+  const colors = [
+    { key: 'cloud', label: 'Cloud' },
+    { key: 'oat', label: 'Oat' },
+    { key: 'noir', label: 'Noir' },
+  ];
   return (
     <section className="color-picker section">
-      <div className="container">
-        <h2>CHOOSE YOUR COLOR</h2>
-        <div className="color-picker-container">
-          <div className="color-swatch cloud" data-color="cloud">
-            <span>Cloud</span>
+      <div className="container color-picker-container">
+        {colors.map((c) => (
+          <div className="color-swatch-card" key={c.key}>
+            <div className={`color-swatch ${c.key}`}></div>
+            <p className="color-name">{c.label}</p>
+            <p className="color-finish">MATTE FINISH</p>
+            <button className="btn btn-outline">CHOOSE</button>
           </div>
-          <div className="color-swatch oat" data-color="oat">
-            <span>Oat</span>
-          </div>
-          <div className="color-swatch noir" data-color="noir">
-            <span>Noir</span>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

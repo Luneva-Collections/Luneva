@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="header">
-      <a href="/" className="logo">LUNEVA</a>
+      <a href="/" className="logo">LUNÉVA</a>
       <nav>
         <ul className="nav-links">
           <li><a href="/shop">SHOP</a></li>
