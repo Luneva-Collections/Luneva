@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function HeroSection() {
   return (
     <section className="hero">
@@ -7,7 +9,12 @@ export default function HeroSection() {
         <p className="hero-description">A beautifully balanced, double-wall insulated bottle designed to move through every part of your day.</p>
         <button className="btn">SHOP THE BOTTLE</button>
         <div className="product-image-placeholder">
-          <p>PRODUCT IMAGE PLACEHOLDER</p>
+          <Image
+            src="/images/luneva-beach-three.jpg"
+            alt="Cloud, Oat, and Noir bottles overlooking the coast"
+            fill
+            style={{ objectFit: 'cover' }}
+          />
         </div>
       </div>
     </section>

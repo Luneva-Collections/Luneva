@@ -6,6 +6,8 @@ import ColorPickerSection from '../components/ColorPickerSection';
 import FeaturesSection from '../components/FeaturesSection';
 import ProductDetailSection from '../components/ProductDetailSection';
 import WhyWeMadeItSection from '../components/WhyWeMadeItSection';
+import JournalGridSection from '../components/JournalGridSection';
+import CallToActionSection from '../components/CallToActionSection';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -19,6 +21,8 @@ export default function Home() {
       <FeaturesSection />
       <ProductDetailSection />
       <WhyWeMadeItSection />
+      <JournalGridSection />
+      <CallToActionSection />
       <Footer />
     </main>
   );
