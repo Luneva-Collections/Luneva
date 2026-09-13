@@ -371,3 +371,31 @@ img { max-width: 100%; }
   .checkout-grid { grid-template-columns: 1fr; }
   .cart-line { grid-template-columns: 60px 1fr auto; grid-template-areas: "img info remove" "img qty total"; }
 }
+
+/* Cart status bar (persistent proceed-to-checkout prompt) */
+.cart-status-bar {
+  position: sticky;
+  top: 89px;
+  z-index: 90;
+  background-color: var(--warm-dark);
+  color: var(--cream-bg);
+  padding: 14px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+.cart-status-btn {
+  padding: 8px 20px;
+  background-color: var(--cream-bg);
+  color: var(--warm-dark);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* Shop card as a link wrapper */
+.shop-card-link { display: block; text-decoration: none; color: inherit; }
+.product-page-other { margin-top: 100px; }
+.product-page-other h2 { font-size: 28px; margin-bottom: 40px; }
