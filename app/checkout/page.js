@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useCart } from '../../lib/cart-context';
 import { formatPrice } from '../../lib/products';
+import PaymentBadges from '../../components/PaymentBadges';
 
 export default function CheckoutPage() {
   const { lines, totalCents, hydrated } = useCart();
@@ -68,6 +69,7 @@ export default function CheckoutPage() {
           <input type="text" placeholder="Country" required defaultValue="Australia" />
 
           <h2>Payment</h2>
+          <PaymentBadges />
           <p className="checkout-payment-note">Payment processing isn&apos;t connected yet — this button won&apos;t charge you anything.</p>
           <p className="checkout-gst-note">All prices shown include GST. A tax invoice will be issued with your order confirmation.</p>
 
