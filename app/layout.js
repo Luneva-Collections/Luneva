@@ -1,5 +1,6 @@
 import './globals.css';
 import { Cormorant_Garamond, Manrope } from 'next/font/google';
+import { CartProvider } from '../lib/cart-context';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -14,14 +15,16 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: 'LUNEVA - Hydration, Elevated',
+  title: 'LUNÉVA - Hydration, Elevated',
   description: 'Premium 32oz double-wall insulated water bottle',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${cormorant.variable} ${manrope.variable}`}>{children}</body>
+      <body className={`${cormorant.variable} ${manrope.variable}`}>
+        <CartProvider>{children}</CartProvider>
+      </body>
     </html>
   );
 }

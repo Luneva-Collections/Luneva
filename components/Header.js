@@ -1,15 +1,18 @@
+import Link from 'next/link';
+import CartIndicator from './CartIndicator';
+
 export default function Header() {
   return (
     <header className="header">
-      <a href="/" className="logo">LUNÉVA</a>
+      <Link href="/" className="logo">LUNÉVA</Link>
       <nav>
         <ul className="nav-links">
-          <li><a href="/shop">SHOP</a></li>
-          <li><a href="/our-design">OUR DESIGN</a></li>
-          <li><a href="/journal">JOURNAL</a></li>
+          <li><Link href="/shop">SHOP</Link></li>
+          <li><Link href="/our-design">OUR DESIGN</Link></li>
+          <li><Link href="/journal">JOURNAL</Link></li>
         </ul>
       </nav>
-      <div className="cart-icon">🛒</div>
+      <CartIndicator />
     </header>
   );
 }

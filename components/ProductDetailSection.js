@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import AddToCartButton from './AddToCartButton';
 
 export default function ProductDetailSection() {
   return (
@@ -20,7 +21,7 @@ export default function ProductDetailSection() {
           <p className="price price-large">$59.95</p>
           <p className="colour-label">COLOUR — OAT</p>
           <p className="colour-desc">A warm neutral inspired by sunlit stone, quiet interiors, and an unhurried pace.</p>
-          <button className="btn">ADD OAT TO BAG · $59.95</button>
+          <AddToCartButton productId="luneva-oat" label="ADD OAT TO BAG · $59.95" />
           <div className="badge-row">
             <span>FREE SHIPPING OVER $75</span>
             <span>30-DAY RETURNS</span>
