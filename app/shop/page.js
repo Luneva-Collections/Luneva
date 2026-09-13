@@ -16,6 +16,7 @@ export default function ShopPage() {
         <p className="eyebrow text-center">THE 32 OZ EVERYDAY BOTTLE</p>
         <h1 className="text-center">Shop LUNÉVA</h1>
         <p className="text-center shop-intro">One bottle, three considered finishes. Choose the one that fits your day.</p>
+        <p className="text-center shop-gst-note">Prices shown include GST.</p>
 
         <div className="shop-grid">
           {products.map((product) => (

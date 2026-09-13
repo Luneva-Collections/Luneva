@@ -9,6 +9,7 @@ export default function Footer() {
           <li><a href="/our-design">DESIGN</a></li>
           <li><a href="/contact">CONTACT</a></li>
         </ul>
+        <p className="footer-gst-note">All prices displayed include GST.</p>
         <p className="copyright">© 2026 LUNÉVA</p>
       </div>
     </footer>

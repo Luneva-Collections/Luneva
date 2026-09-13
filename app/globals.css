@@ -399,3 +399,9 @@ img { max-width: 100%; }
 .shop-card-link { display: block; text-decoration: none; color: inherit; }
 .product-page-other { margin-top: 100px; }
 .product-page-other h2 { font-size: 28px; margin-bottom: 40px; }
+
+/* GST notes */
+.footer-gst-note { font-size: 12px; color: rgba(244,240,235,0.5); margin-bottom: 8px; }
+.shop-gst-note { color: var(--secondary-text); font-size: 13px; margin-top: -30px; margin-bottom: 50px; }
+.checkout-gst-note { font-size: 12px; color: var(--secondary-text); }
+.checkout-gst-note-summary { margin-top: 12px; text-align: right; }

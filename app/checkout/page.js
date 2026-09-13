@@ -66,6 +66,7 @@ export default function CheckoutPage() {
 
           <h2>Payment</h2>
           <p className="checkout-payment-note">Payment processing isn&apos;t connected yet — this button won&apos;t charge you anything.</p>
+          <p className="checkout-gst-note">All prices shown include GST. A tax invoice will be issued with your order confirmation.</p>
 
           <button type="submit" className="btn checkout-submit" disabled={submitting}>
             {submitting ? 'Processing…' : 'PLACE ORDER'}
@@ -85,7 +86,7 @@ export default function CheckoutPage() {
             </div>
           ))}
           <div className="checkout-summary-row">
-            <span>Subtotal</span>
+            <span>Subtotal (incl. GST)</span>
             <span>{formatPrice(totalCents)}</span>
           </div>
           <div className="checkout-summary-row">
@@ -93,9 +94,10 @@ export default function CheckoutPage() {
             <span>Free</span>
           </div>
           <div className="checkout-summary-row checkout-summary-total">
-            <span>Total</span>
+            <span>Total (incl. GST)</span>
             <span>{formatPrice(totalCents)}</span>
           </div>
+          <p className="checkout-gst-note checkout-gst-note-summary">All prices include GST.</p>
         </div>
       </div>
     </main>
