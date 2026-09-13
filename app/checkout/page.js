@@ -50,6 +50,9 @@ export default function CheckoutPage() {
 
   return (
     <main className="checkout-page section">
+      <div className="container">
+        <p className="shop-back"><Link href="/cart">← Back to bag</Link></p>
+      </div>
       <div className="container checkout-grid">
         <form className="checkout-form" onSubmit={handlePlaceOrder}>
           <h2>Contact</h2>

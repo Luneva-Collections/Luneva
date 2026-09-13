@@ -13,6 +13,7 @@ export default function CartPage() {
   return (
     <main className="cart-page section">
       <div className="container">
+        <p className="shop-back"><Link href="/shop">← Continue shopping</Link></p>
         <h1 className="text-center">Your Bag</h1>
 
         {lines.length === 0 ? (
