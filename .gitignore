@@ -1,3 +1,6 @@
 node_modules/
 .next/
 .env*
+
+# internal notes live in the private documentation repository
+HANDOVER.md
